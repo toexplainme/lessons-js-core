@@ -7,13 +7,17 @@
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="media.css" media="all and (max-width:900px)">
+		<link rel="stylesheet" href="lightbox.css">
+		
 	</head>
 	<body>
 		<div class="person">
 
 			<div class="person__info">
 				<div class="avatar">
-					<img class="avatar__picture" src="./avatar.jpg" />
+					<a href="./avatar.jpg" data-lightbox="avatar">
+						<img class="avatar__picture" src="./avatar.jpg"/>
+					</a>
 				</div>
 			</div>
 
@@ -56,5 +60,8 @@
 			</div>
 
 		</div>
+		
+		<script src="lightbox-plus-jquery.js"></script>		
+		
 	</body>
 </html>
